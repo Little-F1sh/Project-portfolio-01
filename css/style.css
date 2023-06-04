@@ -1,60 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
+*{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
-.container{
-  width: 900px;
+.container {
+  width: 1200px;
   margin: 0 auto;
 }
 header {
-  background: rgb(26, 31, 102);
+  background: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-color: rgba(0, 0, 0, 0.082);
+  background-blend-mode: multiply;
+  padding: 15px 0;
+  height: 600px;
 }
 nav {
-  width: 100%;
-  height: 75px;
-  display: inline-block; 
-  
-}
-.logo {
-  width: 10%;
-  position: fixed;
-  margin-top: 10px;
-  
-}
-.logo a h2 {
-  font-weight: 600;
-  font-size: 30px;
-  color: white;
-  text-transform: uppercase;
-}
-.logo a h2 span{
-  font-size: 16px;
-  font-weight: 400;
-  display: block;
-  text-transform: uppercase;
-  margin-left: 80px;
-}
-.search {
-  color: white;
-}
-nav ul {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  margin-top: 30px;
+  justify-content: space-around;
+  margin-top: 50px;
 }
-nav ul li {
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
   list-style: none;
-  padding-right: 30px;
-  
 
 }
-nav ul li a {
+.logo {
+  align-items: center;
+}
+.logo h2{
+  color: red;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.logo h2 span {
+  font-size: 25px;
+}
+.nav-right {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav-left li a, .nav-right li a {
   color: white;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 8px;
   text-decoration: none;
-  
+  font-size: 16px;
 }
